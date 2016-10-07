@@ -7,7 +7,7 @@ namespace Zoolandia
     {
         public static void Main(string[] args)
         {
-            PantheraTigris newCat = new PantheraTigris()
+            PantheraTigris newCat = new PantheraTigris("Richard Parker")
             {
                 species = "Bengal Tiger",
                 disposition = "aggressive",
@@ -48,6 +48,8 @@ namespace Zoolandia
             Console.WriteLine(newBear.feed());
             Console.WriteLine(newMarsupial.feed());
             Console.WriteLine(newSnake.feed());
+            Console.WriteLine(newCat.name);
+            Console.WriteLine(newCat.weight);
         }
     }
 }

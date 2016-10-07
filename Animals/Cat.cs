@@ -13,5 +13,18 @@ namespace Zoolandia.Animals
     {
       this.name = "Bengal Tiger";
     }
+    public PantheraTigris(string name) : base()
+    {
+      this.name = name;
+    }
+    public PantheraTigris(int weight) : base()
+    {
+      this.weight = weight;
+    }
+    public PantheraTigris(string name, int weight) : base()
+    {
+      this.name = name;
+      this.weight = weight;
+    }
   }
 }
