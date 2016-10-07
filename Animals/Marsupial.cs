@@ -2,10 +2,8 @@ using System;
 
 namespace Zoolandia.Animals
 {
-  public class OsphranterRufus: Animal
+  class OsphranterRufus: Animal
   {
-    public string exclusiveTrait {"pouch"}
-
-    public string locomotion {"hopping"}
+    public string locomotion { get; set; }
   }
 }

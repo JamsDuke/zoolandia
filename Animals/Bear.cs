@@ -2,10 +2,8 @@ using System;
 
 namespace Zoolandia.Animals
 {
-  public class UrsusArctos: Animal
+  class UrsusArctos: Animal
   {
-    public string coloring {"brown"}
-
-    public bool hibernates {true}
+    public string coloring { get; set; }
   }
 }
