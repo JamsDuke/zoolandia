@@ -60,10 +60,9 @@ namespace Zoolandia
             Console.WriteLine($"The zoo is currently home to an: {newBear.disposition} {newBear.commonName}, that is a {newBear.diet} weighing {newBear.weight} lbs and {newBear.definingFeature}.");
             Console.WriteLine($"The zoo is currently home to a: {newMarsupial.disposition} {newMarsupial.commonName}, that is a {newMarsupial.diet} weighing {newMarsupial.weight} lbs and can {newMarsupial.definingFeature}.");
             Console.WriteLine($"The zoo is currently home to an: {newSnake.disposition} {newSnake.commonName}, that is a {newSnake.diet} weighing {newSnake.weight} lbs and {newSnake.definingFeature}.");
+            Console.WriteLine(newCat.feed(50,"steak"));
             Console.WriteLine(newCat.feed());
             Console.WriteLine(newBear.feed());
-            Console.WriteLine(newMarsupial.feed());
-            Console.WriteLine(newSnake.feed());
             Console.WriteLine(newCat.name);
             Console.WriteLine(newCat.weight);
             Console.WriteLine(newApe.definingFeature);
