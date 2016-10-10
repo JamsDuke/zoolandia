@@ -7,49 +7,67 @@ namespace Zoolandia
     {
         public static void Main(string[] args)
         {
-            PantheraTigris newCat = new PantheraTigris("Richard Parker")
+            Tigris newCat = new Tigris()
             {
-                species = "Bengal Tiger",
+                name = "Richard Parker",
                 disposition = "aggressive",
                 diet = "carnivore",
                 weight = 500,
-                markings = "stripes"
+                definingFeature = "has stripes"
             };
-            UrsusArctos newBear = new UrsusArctos()
+            Arctos newBear = new Arctos()
             {
-                species = "Grizzly Bear",
+                name = "Yogi",
                 disposition = "aggressive",
                 diet = "omnivore",
                 weight = 600,
-                coloring = "brown"
+                definingFeature = "loves salmon"
             };
-            OsphranterRufus newMarsupial = new OsphranterRufus()
+            Rufus newMarsupial = new Rufus()
             {
-                species = "Red Kangaroo",
+                name = "Rokko",
                 disposition = "docile",
                 diet = "herbivore",
                 weight = 175,
-                locomotion = "hopping"
+                definingFeature = "hop along"
             };
-            CrotalusAtrox newSnake = new CrotalusAtrox()
+            Atrox newSnake = new Atrox()
             {
-                species = "Rattlesnake",
+                name = "Ricky",
                 disposition = "aggressive",
                 diet = "carnivore",
                 weight = 5,
-                venomous = true
+                definingFeature = "is venomous"
+            };
+            Pan newApe = new Pan()
+            {
+                name = "Bubbles",
+                disposition = "aggressive",
+                diet = "omnivore",
+                weight = 140,
+                definingFeature = "is 4 times stronger than a human"
+            };
+            Loxodonta newElephant = new Loxodonta()
+            {
+                name = "Dumbo",
+                disposition = "aggressive",
+                diet = "herbivore",
+                weight = 140,
+                definingFeature = "has tusks"
             };
 
-            Console.WriteLine($"The zoo is currently home to an: {newCat.disposition} {newCat.species}, that is a {newCat.diet} weighing {newCat.weight} lbs with {newCat.markings}.");
-            Console.WriteLine($"The zoo is currently home to an: {newBear.disposition} {newBear.species}, that is a {newBear.diet} weighing {newBear.weight} lbs with {newBear.coloring} fur.");
-            Console.WriteLine($"The zoo is currently home to a: {newMarsupial.disposition} {newMarsupial.species}, that is a {newMarsupial.diet} weighing {newMarsupial.weight} lbs and can be seen {newMarsupial.locomotion}.");
-            Console.WriteLine($"The zoo is currently home to an: {newSnake.disposition} {newSnake.species}, that is a {newSnake.diet} weighing {newSnake.weight} lbs.");
+            Console.WriteLine($"The zoo is currently home to an: {newCat.disposition} {newCat.commonName}, that is a {newCat.diet} weighing {newCat.weight} lbs and {newCat.definingFeature}.");
+            Console.WriteLine($"The zoo is currently home to an: {newBear.disposition} {newBear.commonName}, that is a {newBear.diet} weighing {newBear.weight} lbs and {newBear.definingFeature}.");
+            Console.WriteLine($"The zoo is currently home to a: {newMarsupial.disposition} {newMarsupial.commonName}, that is a {newMarsupial.diet} weighing {newMarsupial.weight} lbs and can {newMarsupial.definingFeature}.");
+            Console.WriteLine($"The zoo is currently home to an: {newSnake.disposition} {newSnake.commonName}, that is a {newSnake.diet} weighing {newSnake.weight} lbs and {newSnake.definingFeature}.");
             Console.WriteLine(newCat.feed());
             Console.WriteLine(newBear.feed());
             Console.WriteLine(newMarsupial.feed());
             Console.WriteLine(newSnake.feed());
             Console.WriteLine(newCat.name);
             Console.WriteLine(newCat.weight);
+            Console.WriteLine(newApe.definingFeature);
+            Console.WriteLine(newElephant.definingFeature);
         }
     }
 }
