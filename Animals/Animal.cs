@@ -12,11 +12,16 @@ namespace Zoolandia.Animals
 
     public string diet { get; set; }
 
-    public double weight { get; set; }
+    public int weight { get; set; }
 
     public virtual string feed()
     {
       return $"{this.name} has been fed";
+    }
+    public virtual string feed(string name)
+    {
+      this.name = name;
+      return $"This animal has been given the new name of {this.name}";
     }
     public static void sleep()
     {
