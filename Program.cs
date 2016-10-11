@@ -7,10 +7,9 @@ namespace Zoolandia
     {
         public static void Main(string[] args)
         {
+            // Tiger
             Genus.Panthera Panthera = new Genus.Panthera();
-
             Species.Tigris Tigris = new Species.Tigris();
-
             Animal newCat = new Animal()
             {
                 name = "Richard Parker",
@@ -21,10 +20,9 @@ namespace Zoolandia
                 Genus = Panthera,
                 Species = Tigris
             };
+            // Grizzly Bear
             Genus.Ursus Ursus = new Genus.Ursus();
-
             Species.Arctos Arctos = new Species.Arctos();
-
             Animal newBear = new Animal()
             {
                 name = "Yogi",
@@ -35,10 +33,9 @@ namespace Zoolandia
                 Genus = Ursus,
                 Species = Arctos
             };
+            // Red Kangaroo
             Genus.Osphranter Osphranter = new Genus.Osphranter();
-
             Species.Rufus Rufus = new Species.Rufus();
-
             Animal newMarsupial = new Animal()
             {
                 name = "Rokko",
@@ -49,10 +46,9 @@ namespace Zoolandia
                 Genus = Osphranter,
                 Species = Rufus
             };
+            // Rattlesnake
             Genus.Crotalus Crotalus = new Genus.Crotalus();
-
             Species.Atrox Atrox = new Species.Atrox();
-
             Animal newSnake = new Animal()
             {
                 name = "Ricky",
@@ -63,10 +59,9 @@ namespace Zoolandia
                 Genus = Crotalus,
                 Species = Atrox
             };
+            // Chimpanzee
             Genus.Pan Pan = new Genus.Pan();
-
             Species.Troglodytes Troglodytes = new Species.Troglodytes();
-
             Animal newApe = new Animal()
             {
                 name = "Bubbles",
@@ -77,10 +72,9 @@ namespace Zoolandia
                 Genus = Pan,
                 Species = Troglodytes
             };
+            // African Elephant
             Genus.Loxodonta Loxodonta = new Genus.Loxodonta();
-
             Species.Africana Africana = new Species.Africana();
-
             Animal newElephant = new Animal()
             {
                 name = "Dumbo",
@@ -92,11 +86,10 @@ namespace Zoolandia
                 Species = Africana
             };
 
-            Console.WriteLine($"The zoo is currently home to an: {newCat.disposition} {newCat.commonName}, that is a {newCat.diet} weighing {newCat.weight} lbs and {newCat.definingFeature}.");
-            Console.WriteLine($"The zoo is currently home to an: {newBear.disposition} {newBear.commonName}, that is a {newBear.diet} weighing {newBear.weight} lbs and {newBear.definingFeature}.");
-            Console.WriteLine($"The zoo is currently home to a: {newMarsupial.disposition} {newMarsupial.commonName}, that is a {newMarsupial.diet} weighing {newMarsupial.weight} lbs and can {newMarsupial.definingFeature}.");
-            Console.WriteLine($"The zoo is currently home to an: {newSnake.disposition} {newSnake.commonName}, that is a {newSnake.diet} weighing {newSnake.weight} lbs and {newSnake.definingFeature}.");
-            Console.WriteLine(newCat.feed(50,"steak"));
+            Console.WriteLine($"The zoo is currently home to an: {newCat.disposition} {newCat.name}, that is a {newCat.diet} weighing {newCat.weight} lbs and {newCat.definingFeature}.");
+            Console.WriteLine($"The zoo is currently home to an: {newBear.disposition} {newBear.name}, that is a {newBear.diet} weighing {newBear.weight} lbs and {newBear.definingFeature}.");
+            Console.WriteLine($"The zoo is currently home to a: {newMarsupial.disposition} {newMarsupial.name}, that is a {newMarsupial.diet} weighing {newMarsupial.weight} lbs and can {newMarsupial.definingFeature}.");
+            Console.WriteLine($"The zoo is currently home to an: {newSnake.disposition} {newSnake.name}, that is a {newSnake.diet} weighing {newSnake.weight} lbs and {newSnake.definingFeature}.");
             Console.WriteLine(newCat.feed());
             Console.WriteLine(newBear.feed());
             Console.WriteLine(newCat.name);

@@ -2,7 +2,7 @@ using System;
 
 namespace Zoolandia.Species
 {
-  public class Americanus : Species
+  public class Troglodytes : Species
   {
     public override string getSpecies()
     {
