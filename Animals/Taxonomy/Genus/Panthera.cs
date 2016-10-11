@@ -1,12 +1,21 @@
-using System;
-
-namespace Zoolandia.Genus
+namespace Zoolandia.Animals
 {
-  public class Panthera: Genus
+  public class Panthera : Genus
   {
-    public override string getGenus()
+
+    public int claws { get; set; }
+
+    private void init()
     {
-      return "Panthera";
+      this.url = "https://en.wikipedia.org/wiki/Tiger";
+      this.trait = "stripes";
+      this.commonName = "Tiger";
+      this.scientificName = "Panthera";
+    }
+
+    public Panthera()
+    {
+      this.init();
     }
   }
 }

@@ -5,7 +5,7 @@ namespace Zoolandia.Animals
     public Tigris()
     {
       this.url = "https://en.wikipedia.org/wiki/Tiger";
-      this.genus = new newCat();
+      this.genus = new Panthera();
       this.scientificName = "Panthera Tigris";
       this.commonName = "Tiger";
     }

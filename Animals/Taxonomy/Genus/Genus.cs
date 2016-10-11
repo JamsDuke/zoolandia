@@ -1,12 +1,7 @@
-using System;
-
-namespace Zoolandia.Genus
+namespace Zoolandia.Animals
 {
-  public class Genus 
+  public class Genus : TaxonomyTerm
   {
-    public virtual string getGenus()
-    {
-      return "unknown";
-    }  
+
   }
 }

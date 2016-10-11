@@ -5,7 +5,7 @@ namespace Zoolandia.Animals
     public Troglodytes()
     {
       this.url = "https://en.wikipedia.org/wiki/Common_chimpanzee";
-      this.genus = new newApe();
+      this.genus = new Pan();
       this.scientificName = "Pan Troglodytes";
       this.commonName = "Chimpanzee";
     }

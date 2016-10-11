@@ -1,11 +1,11 @@
 namespace Zoolandia.Animals
 {
-  public class Ursus : Species
+  public class Arctos : Species
   {
-    public Ursus()
+    public Arctos()
     {
       this.url = "https://en.wikipedia.org/wiki/Grizzly_bear";
-      this.genus = new newBear();
+      this.genus = new Ursus();
       this.scientificName = "Ursus Arctos";
       this.commonName = "Grizzly Bear";
     }

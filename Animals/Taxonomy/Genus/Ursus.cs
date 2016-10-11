@@ -1,12 +1,21 @@
-using System;
-
-namespace Zoolandia.Genus
+namespace Zoolandia.Animals
 {
-  public class Ursus: Genus
+  public class Ursus : Genus
   {
-    public override string getGenus()
+
+    public int claws { get; set; }
+
+    private void init()
     {
-      return "Ursus";
+      this.url = "https://en.wikipedia.org/wiki/Grizzly_bear";
+      this.trait = "loves salmon";
+      this.commonName = "Grizzly Bear";
+      this.scientificName = "Ursus";
+    }
+
+    public Ursus()
+    {
+      this.init();
     }
   }
 }
