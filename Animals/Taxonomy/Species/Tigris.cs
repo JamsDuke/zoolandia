@@ -1,16 +1,13 @@
-using System;
-
-namespace Zoolandia.Species
+namespace Zoolandia.Animals
 {
   public class Tigris : Species
   {
-    public override string getSpecies()
+    public Tigris()
     {
-        return "Panthera Tigris";
-    }
-    public override string getCommonName()
-    {
-        return "Tiger";
+      this.url = "https://en.wikipedia.org/wiki/Tiger";
+      this.genus = new newCat();
+      this.scientificName = "Panthera Tigris";
+      this.commonName = "Tiger";
     }
   }
 }

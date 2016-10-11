@@ -1,16 +1,13 @@
-using System;
-
-namespace Zoolandia.Species
+namespace Zoolandia.Animals
 {
   public class Rufus : Species
   {
-    public override string getSpecies()
+    public Rufus()
     {
-        return "Osphranter Rufus";
-    }
-    public override string getCommonName()
-    {
-        return "Red Kangaroo";
+      this.url = "https://en.wikipedia.org/wiki/Red_kangaroo";
+      this.genus = new newMarsupial();
+      this.scientificName = "Osphranter Rufus";
+      this.commonName = "Red Kangaroo";
     }
   }
 }

@@ -1,16 +1,13 @@
-using System;
-
-namespace Zoolandia.Species
+namespace Zoolandia.Animals
 {
   public class Atrox : Species
   {
-    public override string getSpecies()
+    public Atrox()
     {
-        return "Crotalus Atrox";
-    }
-    public override string getCommonName()
-    {
-        return "Western Diamondback Rattlesnake";
+      this.url = "https://en.wikipedia.org/wiki/Western_diamondback_rattlesnake";
+      this.genus = new newSnake();
+      this.scientificName = "Crotalus Atrox";
+      this.commonName = "Western Diamondback Rattlesnake";
     }
   }
 }

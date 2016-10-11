@@ -1,16 +1,13 @@
-using System;
-
-namespace Zoolandia.Species
+namespace Zoolandia.Animals
 {
   public class Africana : Species
   {
-    public override string getSpecies()
+    public Africana()
     {
-        return "Loxodonta Africana";
-    }
-    public override string getCommonName()
-    {
-        return "African Bush Elephant";
+      this.url = "https://en.wikipedia.org/wiki/African_elephant";
+      this.genus = new newElephant();
+      this.scientificName = "Africana Loxodondta";
+      this.commonName = "African Elephant";
     }
   }
 }

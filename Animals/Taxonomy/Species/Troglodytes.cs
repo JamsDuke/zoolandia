@@ -1,16 +1,13 @@
-using System;
-
-namespace Zoolandia.Species
+namespace Zoolandia.Animals
 {
   public class Troglodytes : Species
   {
-    public override string getSpecies()
+    public Troglodytes()
     {
-        return "Pan Troglodytes";
-    }
-    public override string getCommonName()
-    {
-        return "Chimpanzee";
+      this.url = "https://en.wikipedia.org/wiki/Common_chimpanzee";
+      this.genus = new newApe();
+      this.scientificName = "Pan Troglodytes";
+      this.commonName = "Chimpanzee";
     }
   }
 }

@@ -1,16 +1,13 @@
-using System;
-
-namespace Zoolandia.Species
+namespace Zoolandia.Animals
 {
-  public class Arctos : Species
+  public class Ursus : Species
   {
-    public override string getSpecies()
+    public Ursus()
     {
-        return "Ursus Arctos";
-    }
-    public override string getCommonName()
-    {
-        return "Grizzly Bear";
+      this.url = "https://en.wikipedia.org/wiki/Grizzly_bear";
+      this.genus = new newBear();
+      this.scientificName = "Ursus Arctos";
+      this.commonName = "Grizzly Bear";
     }
   }
 }

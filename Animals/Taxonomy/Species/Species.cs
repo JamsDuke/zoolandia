@@ -1,14 +1,19 @@
-namespace Zoolandia.Species
+namespace Zoolandia.Animals
 {
-  public class Species
+  public class Species : TaxonomyTerm
   {
-    public virtual string getCommonName()
+    private Genus _genus;
+
+    public Genus genus
     {
-        return "Unknown Common Name";
-    }
-    public virtual string getSpecies()
-    {
-        return "Unknown Species";
+      get
+      {
+        return _genus;
+      }
+      set
+      {
+        _genus = value;
+      }
     }
   }
 }
