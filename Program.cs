@@ -7,53 +7,89 @@ namespace Zoolandia
     {
         public static void Main(string[] args)
         {
-            Tigris newCat = new Tigris()
+            Genus.Panthera Panthera = new Genus.Panthera();
+
+            Species.Tigris Tigris = new Species.Tigris();
+
+            Animal newCat = new Animal()
             {
                 name = "Richard Parker",
                 disposition = "aggressive",
                 diet = "carnivore",
                 weight = 500,
-                definingFeature = "has stripes"
+                definingFeature = "has stripes",
+                Genus = Panthera,
+                Species = Tigris
             };
-            Arctos newBear = new Arctos()
+            Genus.Ursus Ursus = new Genus.Ursus();
+
+            Species.Arctos Arctos = new Species.Arctos();
+
+            Animal newBear = new Animal()
             {
                 name = "Yogi",
                 disposition = "aggressive",
                 diet = "omnivore",
                 weight = 600,
-                definingFeature = "loves salmon"
+                definingFeature = "loves salmon",
+                Genus = Ursus,
+                Species = Arctos
             };
-            Rufus newMarsupial = new Rufus()
+            Genus.Osphranter Osphranter = new Genus.Osphranter();
+
+            Species.Rufus Rufus = new Species.Rufus();
+
+            Animal newMarsupial = new Animal()
             {
                 name = "Rokko",
                 disposition = "docile",
                 diet = "herbivore",
                 weight = 175,
-                definingFeature = "hop along"
+                definingFeature = "hop along",
+                Genus = Osphranter,
+                Species = Rufus
             };
-            Atrox newSnake = new Atrox()
+            Genus.Crotalus Crotalus = new Genus.Crotalus();
+
+            Species.Atrox Atrox = new Species.Atrox();
+
+            Animal newSnake = new Animal()
             {
                 name = "Ricky",
                 disposition = "aggressive",
                 diet = "carnivore",
                 weight = 5,
-                definingFeature = "is venomous"
+                definingFeature = "is venomous",
+                Genus = Crotalus,
+                Species = Atrox
             };
-            Pan newApe = new Pan()
+            Genus.Pan Pan = new Genus.Pan();
+
+            Species.Troglodytes Troglodytes = new Species.Troglodytes();
+
+            Animal newApe = new Animal()
             {
                 name = "Bubbles",
                 disposition = "aggressive",
                 diet = "omnivore",
                 weight = 140,
-                definingFeature = "is 4 times stronger than a human"
+                definingFeature = "is 4 times stronger than a human",
+                Genus = Pan,
+                Species = Troglodytes
             };
-            Loxodonta newElephant = new Loxodonta()
+            Genus.Loxodonta Loxodonta = new Genus.Loxodonta();
+
+            Species.Africana Africana = new Species.Africana();
+
+            Animal newElephant = new Animal()
             {
                 name = "Dumbo",
                 disposition = "aggressive",
                 diet = "herbivore",
                 weight = 140,
-                definingFeature = "has tusks"
+                definingFeature = "has tusks",
+                Genus = Loxodonta,
+                Species = Africana
             };
 
             Console.WriteLine($"The zoo is currently home to an: {newCat.disposition} {newCat.commonName}, that is a {newCat.diet} weighing {newCat.weight} lbs and {newCat.definingFeature}.");

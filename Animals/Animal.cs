@@ -4,6 +4,8 @@ namespace Zoolandia.Animals
 {
   public class Animal
   {
+    public Genus.Genus Genus { get; set; }
+    public Species.Species Species { get; set; }
     public string name { get; set; }
 
     public string disposition { get; set; }

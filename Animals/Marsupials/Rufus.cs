@@ -1,10 +1,16 @@
 using System;
 
-namespace Zoolandia.Animals
+namespace Zoolandia.Species
 {
-  public class Rufus: Osphranter
+  public class Rufus : Species
   {
-    public string commonName = "Red Kangaroo";
-    public string scientificName = "Osphranter Rufus";
+    public override string getSpecies()
+    {
+        return "Osphranter Rufus";
+    }
+    public override string getCommonName()
+    {
+        return "Red Kangaroo";
+    }
   }
 }

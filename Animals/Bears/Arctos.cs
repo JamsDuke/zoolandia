@@ -1,10 +1,16 @@
 using System;
 
-namespace Zoolandia.Animals
+namespace Zoolandia.Species
 {
-  public class Arctos: Ursus
+  public class Arctos : Species
   {
-    public string commonName = "Grizzly Bear";
-    public string scientificName = "Ursus Arctos";
+    public override string getSpecies()
+    {
+        return "Ursus Arctos";
+    }
+    public override string getCommonName()
+    {
+        return "Grizzly Bear";
+    }
   }
 }

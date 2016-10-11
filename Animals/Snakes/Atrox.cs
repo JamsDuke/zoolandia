@@ -1,10 +1,16 @@
 using System;
 
-namespace Zoolandia.Animals
+namespace Zoolandia.Species
 {
-  public class Atrox: Crotalus
+  public class Atrox : Species
   {
-    public string commonName = "Western Diamondback Rattlesnake";
-    public string scientificName = "Crotalus Atrox";
+    public override string getSpecies()
+    {
+        return "Crotalus Atrox";
+    }
+    public override string getCommonName()
+    {
+        return "Western Diamondback Rattlesnake";
+    }
   }
 }

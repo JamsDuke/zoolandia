@@ -1,10 +1,16 @@
 using System;
 
-namespace Zoolandia.Animals
+namespace Zoolandia.Species
 {
-  public class Troglodytes: Pan
+  public class Americanus : Species
   {
-    public string commonName = "Chimpanzee";
-    public string scientificName = "Pan Troglodytes";
+    public override string getSpecies()
+    {
+        return "Pan Troglodytes";
+    }
+    public override string getCommonName()
+    {
+        return "Chimpanzee";
+    }
   }
 }
