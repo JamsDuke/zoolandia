@@ -17,6 +17,7 @@ namespace Zoolandia
       elephant.forage();
       elephant.reproduce(false);
       elephant.eat("leaves");
+      elephant.walk();
     }
   }
 }
