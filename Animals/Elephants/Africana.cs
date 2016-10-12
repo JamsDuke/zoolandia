@@ -1,10 +1,16 @@
 using System;
 
-namespace Zoolandia.Animals
+namespace Zoolandia.Species
 {
-  public class Africana: Loxodonta
+  public class Africana : Species
   {
-    public string commonName = "African Bush Elephant";
-    public string scientificName = "Loxodonta Africana";
+    public override string getSpecies()
+    {
+        return "Loxodonta Africana";
+    }
+    public override string getCommonName()
+    {
+        return "African Bush Elephant";
+    }
   }
 }

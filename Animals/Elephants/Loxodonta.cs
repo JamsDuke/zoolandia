@@ -1,9 +1,12 @@
 using System;
 
-namespace Zoolandia.Animals
+namespace Zoolandia.Genus
 {
-  public class Loxodonta: Animal
+  public class Loxodonta: Genus
   {
-    public string definingFeature { get; set; }
+    public override string getGenus()
+    {
+      return "Loxodonta";
+    }
   }
 }

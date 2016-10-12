@@ -1,9 +1,12 @@
 using System;
 
-namespace Zoolandia.Animals
+namespace Zoolandia.Genus
 {
-  public class Pan: Animal
+  public class Pan: Genus
   {
-    public string definingFeature { get; set; }
+    public override string getGenus()
+    {
+      return "Pan";
+    }
   }
 }
