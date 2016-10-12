@@ -9,7 +9,7 @@ namespace Zoolandia.Animals
     private string _food = "";
     // private string disposition { get; set; }
     // private string diet { get; set; }
-    private int weight = 0;
+    public int weight = 0;
 
     public string name
     {
