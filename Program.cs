@@ -15,7 +15,8 @@ namespace Zoolandia
 
       System.Console.WriteLine($"{elephant.name} is a {elephant.species.commonName} weighing an impressive {elephant.weight}lbs.");
       elephant.forage();
-      elephant.reproduce(true);
+      elephant.reproduce(false);
+      elephant.eat("leaves");
     }
   }
 }
