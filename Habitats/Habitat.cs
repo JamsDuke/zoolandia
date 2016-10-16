@@ -5,9 +5,7 @@ namespace Zoolandia.Habitats
 {
   public class Habitat
   {
-    public int width;
-    public int depth;
-    public int height;
+    public int squareFootage;
     public string name;
     public string location;
     public List<Animal> _inhabitants = new List<Animal>();

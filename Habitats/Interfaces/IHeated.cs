@@ -4,6 +4,5 @@ namespace Zoolandia.Habitats
   {
     double lowHeatTemp { get; set; }
     double maxHeatTemp { get; set; }
-    string simulatedSeason { get; set; }
   }
 }

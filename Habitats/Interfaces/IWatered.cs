@@ -5,5 +5,6 @@ namespace Zoolandia.Habitats
     bool hasFog { get; set; }
     double waterAmount { get; set; }
     string waterDeliveryMethod { get; set; }
+    string simulatedSeason { get; set; }
   }
 }
